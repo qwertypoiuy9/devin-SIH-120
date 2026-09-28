@@ -209,4 +209,4 @@ This is a demonstration project for educational purposes.
 
 ---
 
-**Built with ❤️ for the Smart India Hackathon 2024**
+**Built with ❤️ for the Smart India Hackathon 2026**

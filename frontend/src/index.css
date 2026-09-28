@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-panel/80 backdrop-blur-sm border border-cyan/20;
+  }
+  
+  .glow-border {
+    @apply border border-cyan/30 shadow-[0_0_10px_rgba(0,200,255,0.3)];
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+  }
+  
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(0, 200, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 200, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-panel-secondary;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-cyan/30 rounded;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyan/50;
+  }
+}
